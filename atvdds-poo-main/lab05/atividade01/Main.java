@@ -3,7 +3,7 @@ package lab05.atividade01;
 public class Main {
     public static void main(String[] args){
 
-        Automovel carro = new Automovel("PTH9315", 10, 50);
+        Automovel carro = new Automovel("PTH9316", 10, 50);
 
         carro.abastece(50);
         System.out.println("Combustível no tanque: " + carro.getCombustivelNoTanque());
