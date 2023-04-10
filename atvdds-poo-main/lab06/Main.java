@@ -8,7 +8,8 @@ public class Main{
         System.out.println("Digite seu nome e seu cpf: ");
         Cliente gabriel = new Cliente(s.next(), s.next());
 
-        Conta itau = new Conta(1, 1, gabriel, s.nextInt(), 0);
+        Conta itau = new Conta(1, 1, aecio, s.nextInt(), 0);
+        
 
 
 
