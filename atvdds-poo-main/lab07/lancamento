@@ -1,0 +1,13 @@
+public class Lancamento {
+	
+	private String descrisao;
+
+	private double valor;
+	
+	public Lancamento(String descrisao, double valor){
+		this.descrisao = descrisao;
+		this.valor = valor;
+		
+	}
+	
+}
