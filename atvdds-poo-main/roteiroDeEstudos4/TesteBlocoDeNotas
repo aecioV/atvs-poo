@@ -1,0 +1,13 @@
+package src;
+
+public class TesteBlocoDeNotas {
+public static void main(String[]args) {
+BlocoDeNotas meuBlocoDeNotas= new BlocoDeNotas();
+meuBlocoDeNotas.insereNota("Fazer atv, lembrar");
+meuBlocoDeNotas.insereNota("Estudar pra prova, lembrar");
+meuBlocoDeNotas.insereNota("Pegar dinheiro pro almoço");
+System.out.println(meuBlocoDeNotas.quantDeNotasArmazenadas());
+meuBlocoDeNotas.mostraNota(3);
+
+}
+}
