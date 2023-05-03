@@ -1,0 +1,58 @@
+package src;
+import java.util.ArrayList;
+import java.util.Iterator;
+public class BlocoDeNotas {
+	private ArrayList<String> notas;
+	
+	public BlocoDeNotas() {
+		this.notas=new ArrayList<>();
+	}
+	public void insereNota(String nota) {
+		this.notas.add(nota);
+	}
+	public int quantDeNotasArmazenadas() {
+		return this.notas.size();
+	}
+	public void mostraNota(int idDaNota) {
+		if(idDaNota<0) {
+			System.out.println("ID Inválido");
+			
+		}
+		else {
+			if(idDaNota>=this.quantDeNotasArmazenadas()) {
+				System.out.println("ID Inválido");
+			}
+			else {
+				System.out.println(this.notas.get(idDaNota));
+			}
+		}
+	}
+	public void removeNota(int idDaNota) {
+		if(idDaNota<0) {
+			System.out.println("ID Inválido");
+			
+		}
+		else {
+			if(idDaNota>=this.quantDeNotasArmazenadas()) {
+				System.out.println("ID Inválido");
+			}
+			else {
+           this.notas.remove(idDaNota);
+			}
+		}
+	}
+	public void mostraTodasAsNotas() {
+		for(String nota:this.notas) {
+			System.out.println(nota);
+		}
+	}
+	public void removeContaCom(String string) {
+		Iterator<String> it= this.notas.iterator();
+		while(it.hasNext()) {
+			String nota= it.next();
+			if(nota.contains(string)) {
+				it.remove();
+			}
+		}
+	}
+}
